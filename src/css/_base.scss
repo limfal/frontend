@@ -1,0 +1,8 @@
+$main-color: rgb(206, 214, 204);
+$darker: darken($main-color, 50%);
+$even-darker: darken($main-color, 55%);
+$lighter: lighten($main-color, 10%);
+$background-light: white;
+$background-dark: rgb(53 53 53);
+
+$main-font: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;

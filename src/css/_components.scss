@@ -2,15 +2,18 @@
 
 @mixin showbooks($darkmode) {
 
-	@if $darkmode {
-		#bookrecs {
-            display:none;
+    @if $darkmode {
+        #bookrecs {
+            display: none;
         }
-	} @else {
-        #bookrecsdark {
-        display: none;
     }
-}}
+
+    @else {
+        #bookrecsdark {
+            display: none;
+        }
+    }
+}
 
 %button {
     display: block;
@@ -30,3 +33,4 @@
     cursor: pointer;
     border: 2px solid base.$darker;
 }
+

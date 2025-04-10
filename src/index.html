@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,145 @@
     <title>Document</title>
     <script src="js/main.js" type="module"></script>
 </head>
-<header>
-    
-</header>
+
 <body>
-    <h1>Hello World!</h1>
 
+    <nav>
+        <ul>
+            <li class="current"><a href="#">start</a></li>
+            <li><a href="#">Sass</a></li>
+            <li><a href="#">another</a></li>
+            <li><a href="#">another</a></li>
+            <li><a href="#">another</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="welcome">
+            <h1>Welcome to the library</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deleniti aperiam, a consectetur maiores
+                libero. Architecto quibusdam, delectus optio accusamus magnam quo inventore accusantium ullam nulla
+                velit assumenda doloremque quasi!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iusto mollitia magnam id, nulla
+                asperiores, minima earum, suscipit omnis eum est placeat. Necessitatibus numquam fuga rerum eveniet
+                nemo? Odio, illum?
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad optio dolor natus, eligendi molestias omnis
+                quas. Maxime aperiam repudiandae nihil magnam minus eum necessitatibus. Minus ratione dolore officia
+                eveniet commodi?</p>
 
+        </div >
+        <div id="bookrecgroup">
+            <h2>Rekommenderade böcker</h2>
+            <div id="bookrecs">
+
+                <div class="onebook">
+                    <picture>
+                        <source srcset="images/bok1.jpg?as=avif&height=225" type="image/avif">
+                        <source srcset="images/bok1.jpg?as=webp&height=225" type="image/webp">
+                        <img src="images/bok1.jpg?height=225" alt="">
+                    </picture>
+                    <button>Reservera</button>
+                    <button>Hitta</button>
+                </div>
+                <div class="onebook">
+                    <picture>
+                        <source srcset="images/bok6.jpg?as=avif&height=225" type="image/avif">
+                        <source srcset="images/bok6.jpg?as=webp&height=225" type="image/webp">
+                        <img src="images/bok6.jpg?height=225" alt="">
+                    </picture>
+                    <button>Reservera</button>
+                    <button>Hitta</button>
+                </div>
+                <div class="onebook">
+                    <picture>
+                        <source srcset="images/bok7.jpg?as=avif&height=225" type="image/avif">
+                        <source srcset="images/bok7.jpg?as=webp&height=225" type="image/webp">
+                        <img src="images/bok7.jpg?height=225" alt="">
+                    </picture>
+                    <button>Reservera</button>
+                    <button>Hitta</button>
+                </div>
+                <div class="onebook">
+                    <picture>
+                        <source srcset="images/bok4.jpg?as=avif&height=225" type="image/avif">
+                        <source srcset="images/bok4.jpg?as=webp&height=225" type="image/webp">
+                        <img src="images/bok4.jpg?height=225" alt="">
+                    </picture>
+                    <button>Reservera</button>
+                    <button>Hitta</button>
+                </div>
+            </div>
+
+            <div id="bookrecsdark">
+
+                <div class="onebook">
+                    <picture>
+                        <source srcset="images/bok5.jpg?as=avif&height=225" type="image/avif">
+                        <source srcset="images/bok5.jpg?as=webp&height=225" type="image/webp">
+                        <img src="images/bok5.jpg?height=225" alt="">
+                    </picture>
+                    <button>Reservera</button>
+                    <button>Hitta</button>
+                </div>
+                <div class="onebook">
+                    <picture>
+                        <source srcset="images/bok2.jpg?as=avif&height=225" type="image/avif">
+                        <source srcset="images/bok2.jpg?as=webp&height=225" type="image/webp">
+                        <img src="images/bok2.jpg?height=225" alt="">
+                    </picture>
+                    <button>Reservera</button>
+                    <button>Hitta</button>
+                </div>
+                <div class="onebook">
+                    <picture>
+                        <source srcset="images/bok3.jpg?as=avif&height=225" type="image/avif">
+                        <source srcset="images/bok3.jpg?as=webp&height=225" type="image/webp">
+                        <img src="images/bok3.jpg?height=225" alt="">
+                    </picture>
+                    <button>Reservera</button>
+                    <button>Hitta</button>
+                </div>
+                <div class="onebook">
+                    <picture>
+                        <source srcset="images/bok8.jpg?as=avif&height=225" type="image/avif">
+                        <source srcset="images/bok8.jpg?as=webp&height=225" type="image/webp">
+                        <img src="images/bok8.jpg?height=225" alt="">
+                    </picture>
+                    <button>Reservera</button>
+                    <button>Hitta</button>
+                </div>
+            </div>
+
+            <div id="last">
+                <section id="first">
+                    <h1>Here is the information</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deleniti aperiam, a consectetur
+                        maiores libero. Architecto quibusdam, delectus optio accusamus magnam quo inventore accusantium ullam
+                        nulla velit assumenda doloremque quasi!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quis vel vero tempora corporis!
+                        Cum quibusdam molestiae fugit non aspernatur ipsum atque. Pariatur tenetur laborum et laudantium
+                        nostrum quaerat quia.</p>
+                </section>
+
+                <section id="second">
+                    <h3>Inköpsförslag</h3>
+                    <p>Titel:</p><input type="text">
+                    <p>Författare:</p><input type="text">
+                    <p>Motivation:</p><textarea></textarea>
+                    <button>Skicka in</button>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Moment 3 - CSS preprocessorer</p>
+        <p>Webbutveckling Mittuniversitetet - VT 2025</p>
+        <p>Av Linn Fällman</p>
+    </footer>
 </body>
+
 </html>

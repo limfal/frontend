@@ -1,18 +1,197 @@
 @use "base";
 @use "components";
 
+h1,
+p {
+    font-family: base.$main-font;
+    color: base.$darker;
+    padding: 0 0 5% 0;
+    max-width: 550px;
+    margin: auto;
+}
 
+h1 {
+    font-size: 3rem;
+    padding-top: 10%;
+}
+
+.container {
+    background-color: base.$main-color;
+    max-width: 1050px;
+    margin: auto;
+}
+
+#welcome {
+    margin-bottom: 10%;
+
+    p {
+        padding: 0 0 2% 0;
+    }
+}
+
+
+nav {
+    max-width: 1050px;
+    margin: 5% auto 0 auto;
+    padding: 0;
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: base.$darker;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: base.$background-light;
+        margin-right: -5px;
+
+        &:hover {
+            background-color: base.$lighter;
+        }
+
+    }
+
+
+
+    .current {
+        background-color: base.$main-color;
+    }
+
+}
 
 #bookrecgroup {
-    @include components.showbooks(true);
+    button {
+        @extend %button;
+
+        &:hover {
+            @extend %button-hover;
+        }
+    }
+
+    .onebook {
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: base.$background-light;
+        color: base.$darker;
+        width: 96%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+
+    #bookrecs,
+    #bookrecsdark {
+        margin: 0 auto;
+        display: grid;
+        gap: 5%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    img {
+        display: block;
+        margin: 5% auto;
+    }
 }
 
-button {
-    @extend %button;
+#last {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
 
-&:hover {
-    @extend %button-hover;
+    h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: base.$darker;
+        text-align: center;
+        margin: 30% 0 0 0;
+    }
+
+    #first {
+        margin-top: 10%;
+        margin-bottom: 40%;
+    }
+}
+
+#second {
+    p {
+        padding: 4% 0 2% 8%;
+    }
+
+    button {
+        width: 85%;
+        display: block;
+        margin: 5% auto 20% auto;
+        padding: 3.5%;
+        font-size: 0.9em;
+        background-color: base.$darker;
+        color: base.$main-color;
+        border-radius: 5px;
+        border: none;
+
+        &:hover {
+            background-color: base.$lighter;
+            color: base.$darker;
+            cursor: pointer;
+            border: 2px solid base.$darker;
+        }
+    }
+
+    input {
+        display: block;
+        width: 80%;
+        margin: auto;
+        padding: 2%;
+    }
+
+    textarea {
+        display: block;
+        width: 80%;
+        margin: auto;
+        height: 100px;
+        resize: none;
+        padding: 2%;
+    }
 
 }
+
+footer {
+    padding: 1%;
+    height: 4em;
+    max-width: 1020px;
+    margin: 0 auto;
+
+    p {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
 }
 
+@media (prefers-color-scheme: light) {
+
+    #bookrecgroup {
+        @include components.showbooks(false);
+    }
+
+    body,
+    #bookrecs {
+        background-color: base.$background-light;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    #bookrecgroup {
+        @include components.showbooks(true);
+    }
+}

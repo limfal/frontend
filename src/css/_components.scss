@@ -1,3 +1,4 @@
+@use "base";
 
 @mixin showbooks($darkmode) {
 
@@ -12,9 +13,20 @@
 }}
 
 %button {
-    background-color: green;
+    display: block;
+    margin: 5% auto;
+    padding: 5%;
+    width: 70%;
+    font-size: 0.9em;
+    background-color: base.$darker;
+    color: base.$main-color;
+    border-radius: 5px;
+    border: none;
 }
 
 %button-hover {
-    background-color: blue;
+    background-color: base.$lighter;
+    color: base.$darker;
+    cursor: pointer;
+    border: 2px solid base.$darker;
 }

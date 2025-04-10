@@ -1,0 +1,18 @@
+@use "base";
+@use "components";
+
+
+
+#bookrecgroup {
+    @include components.showbooks(true);
+}
+
+button {
+    @extend %button;
+
+&:hover {
+    @extend %button-hover;
+
+}
+}
+

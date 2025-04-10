@@ -1,0 +1,20 @@
+
+@mixin showbooks($darkmode) {
+
+	@if $darkmode {
+		#bookrecs {
+            display:none;
+        }
+	} @else {
+        #bookrecsdark {
+        display: none;
+    }
+}}
+
+%button {
+    background-color: green;
+}
+
+%button-hover {
+    background-color: blue;
+}

@@ -19,8 +19,40 @@ h1 {
     background-color: base.$main-color;
     max-width: 1050px;
     margin: auto;
-    min-height: 70vh;
+      
 }
+
+#animationbox {
+    background-color: base.$background-light;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 1fr 1fr;
+
+#animation1 {
+    width: 100%;
+    height: 450px;
+    background-color: base.$main-color;
+}
+
+#animation2 {
+    width: 100%;
+    height: 450px;
+    background-color: base.$main-color;
+}
+
+#animation3 {
+    width: 100%;
+    height: 450px;
+    background-color: base.$main-color;
+}
+
+#animation4 {
+    width: 100%;
+    height: 450px;
+    background-color: base.$main-color;
+}
+}
+
 
 #welcome {
     margin-bottom: 10%;
@@ -157,6 +189,7 @@ footer {
     height: 4em;
     max-width: 1020px;
     margin: 0 auto;
+    margin-top: 5%;
 
     p {
         text-align: center;
@@ -258,6 +291,10 @@ footer {
             }
         }
     }
+
+    #animationbox {
+        background-color: base.$background-dark;
+    }
 }
 
     @media (max-width: 850px) {
@@ -296,6 +333,10 @@ footer {
                 grid-template-columns: 1fr 1fr;
                 padding-bottom: 15%;
             }
+        }
+
+        #animationbox {
+            grid-template-columns: 1fr;
         }
     }
 

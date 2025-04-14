@@ -81,7 +81,30 @@
 
     }
 
+    @keyframes bubblecolor {
+        0% {
+            background-color: pink;
+        }
     
+        25% {
+            background-color: rebeccapurple;
+        }
+    
+        50% {
+            background-color: deepskyblue;
+        }
+    
+        75% {
+            background-color: springgreen;
+        }
+    
+        100% {
+            background-color: yellow;
+        }
+    }
+
+
+
 #animation2 {
     width: 100%;
     height: 100%;
@@ -98,32 +121,29 @@
     width: 100%;
     height: 100%;
     background-color: base.$main-color;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
 }
-}
 
-
-
-
-@keyframes bubblecolor {
-    0% {
-        background-color: pink;
+    #clickme {
+        background: url(../images/smiley.png);
+        width: 270px;
+        height: 270px;
+        border: none;
+        display: block;
+        margin: auto;
+        padding-top: 15%;
+        font-size: 1.2em;
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
 
-    25% {
-        background-color: rebeccapurple;
+    #clickme:hover {
+        cursor: pointer;
     }
 
-    50% {
-        background-color: deepskyblue;
-    }
 
-    75% {
-        background-color: springgreen;
-    }
-
-    100% {
-        background-color: yellow;
-    }
 }
 
 

@@ -22,38 +22,6 @@ h1 {
       
 }
 
-#animationbox {
-    background-color: base.$background-light;
-    display: grid;
-    gap: 2%;
-    grid-template-columns: 1fr 1fr;
-
-#animation1 {
-    width: 100%;
-    height: 450px;
-    background-color: base.$main-color;
-}
-
-#animation2 {
-    width: 100%;
-    height: 450px;
-    background-color: base.$main-color;
-}
-
-#animation3 {
-    width: 100%;
-    height: 450px;
-    background-color: base.$main-color;
-}
-
-#animation4 {
-    width: 100%;
-    height: 450px;
-    background-color: base.$main-color;
-}
-}
-
-
 #welcome {
     margin-bottom: 10%;
 

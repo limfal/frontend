@@ -109,7 +109,64 @@
     width: 100%;
     height: 100%;
     background-color: base.$main-color;
+    position: relative;
+
+
+#fly1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 0;
+    animation: catchMe 10s 1s infinite linear;
+    
 }
+
+#fly2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    animation: catchMe 10s 4s infinite linear;
+}
+
+#fly3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    animation: catchMe 10s 7s infinite linear;
+}
+}
+
+
+@keyframes catchMe {
+    0% {
+        transform: translate(0px);
+    }
+
+    25% {
+         transform: translate(465px);
+    }
+
+    50% {
+        transform: translate(465px, 435px);
+    }
+
+    75% {
+        transform: translate(0px, 430px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
 
 #animation3 {
     width: 100%;
@@ -224,41 +281,10 @@
 }
 
 
-#testy {
-    width: 50px;
-    height: 50px;
-    background-color: green;
-    animation: testTwo 3s 5s infinite alternate;
-}
-
-@keyframes testTwo {
-    to {
-        
-        transform: translate(465px, 400px);
-        
-    }
-
-    from {
-transform: rotate(90deg);
-    }
-}
 
 
-#animation3 {
-    position: relative;
-}
 
-#testy2 {
-    width: 50px;
-    height: 50px;
-    background-color: green;
-    position: absolute;
-    bottom: 0;
-}
 
-/** 
-1. blinkande bubblor
-2. flygande snurrande rutor
-3. hoppande hattifnattar
-4. knappeffekt
-**/
+
+
+

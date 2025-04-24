@@ -193,6 +193,10 @@
         background-color: base.$main-color;
     }
 
+    .figure:active {
+        background-color: base.$main-color;
+        }        
+
     #figure1 {
         grid-column: 1/3;
         grid-row: 11/15;

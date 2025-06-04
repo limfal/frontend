@@ -1,0 +1,7 @@
+@use "base";
+
+h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: base.$darker;
+        text-align: center;
+}

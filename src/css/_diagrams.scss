@@ -5,3 +5,27 @@ h2 {
         color: base.$darker;
         text-align: center;
 }
+
+@media (prefers-color-scheme: dark) {
+   h2 {
+        color: base.$main-color;
+    }
+
+}
+
+#pie-container, #container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+#container {
+    max-width: 800px;
+
+}
+
+canvas {
+    margin: auto;
+    width: 100%;
+ 
+}

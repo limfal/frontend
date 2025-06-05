@@ -23,8 +23,6 @@ const info = await response.json();
 }}
 
 function printPrograms (content) {
-    console.table(content);
-    console.log(content[1].name);
     
 new Chart(ctx2, { 
     type: 'pie', 
@@ -54,7 +52,6 @@ new Chart(ctx2, {
 }
 
 function printCourses (content) {
-    console.table(content);
 
 new Chart(ctx, { 
 type: 'bar', 

@@ -326,6 +326,43 @@ footer {
             }
         }}}
     
+/**map stuff**/
         #map {
             height: 80vh;
             }
+        #mapSearch {
+            padding: 0.5em;
+
+        }
+        #searchbar {
+            padding: 2%;
+            display: block;
+                label {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        color: base.$darker;
+                        padding: 0 1em;
+                }
+                
+                @media (prefers-color-scheme: dark) {
+                   label {
+                        color: base.$main-color;
+                    }
+                
+                }
+
+                #searchBtn {
+                    background-color: base.$darker;
+                    color: base.$main-color;
+                    border-radius: 5px;
+                    border: none;
+                    padding: 0.6em;
+                    margin: 0.5em;
+                &:hover {
+                        @extend %button-hover;
+                    }
+                }
+
+                    
+                }
+                
+    

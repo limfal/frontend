@@ -1,6 +1,7 @@
 "use strict";
 
 // GEOLOCATION STUFF
+
 if ("geolocation" in navigator) {
 
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -29,12 +30,19 @@ const inputEl = document.getElementById("mapSearch");
 btnEl.addEventListener('click', searchPlace);
 
 
-function searchPlace () {
+async function searchPlace () {
     console.log(inputEl.value);
 
-    //HÄR LÄGGER VI IN HELA NOMINATIMSÖKNINGEN
-}
+        try {
+            const response = await fetch("https://nominatim.openstreetmap.org/search?q=" + inputEl.value + "&format=json&limit=1");
+            const place = await response.json; 
+            console.log(place);
 
+        } catch (error) {
+            console.error(error);
+        }
+    }
+    
 
 // FUNKTION FÖR ATT VISA KARTAN
 function loadMap(long, lat) {
